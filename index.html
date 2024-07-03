@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="/images/logo2.png">
+
+</head>
+
+<body>
+    <div class="modal_error">
+        DIGITE APENAS NUMEROS.
+    </div>
+
+    <div class="container">
+        <main class="card">
+            <form class="form">
+                <img src="./images/logo2.png" width="150px" height="150px" class="logo">
+                <h1 class="title">Calculadora de IMC</h1>
+                <div class="input-wrapper">
+                    <label id="textName" for="name">Informe o seu nome:</label>
+                    <input id="name" type="text" placeholder="Exemplo: João">
+                </div>
+                <div class="input-wrapper">
+                    <label id="textWeight" for="weight" onkeyup="AddComma(this);">Informe o seu peso:</label>
+                    <input id="weight" type="text" placeholder="Exemplo: 75kg">
+                </div>
+                
+                <div class="input-wrapper">
+                    <label id="textHeight" for="height">Informe a sua altura:</label>
+                    <input id="height" type="text" placeholder="Exemplo: 1,60cm">
+                </div>
+                <fieldset class="field">
+                <div class="male">
+                    <input class="M" type="radio" id="MALE" name="drone" value="male" /></input>
+                    <label for="MALE" >Homem</label>
+                </div>
+
+                <div class="female">
+                    <input class="f" type="radio" id="FEMALE" name="drone" value="female" /></input>
+                    <label for="FEMALE">Mulher</label>
+                </div>
+            </fieldset>
+            <div class="buttonok">
+                <button type="submit">
+                    <bold>CALCULAR</bold>
+                </button>
+    </form>
+
+            <div class="modal-wrapper" id="mw">
+                <div class="modal card">
+                    <h5 class="nameShow">
+                        <span></span>
+                    </h5>
+                    <h3 class="h3">
+                        <span>
+                        </span>
+                        </h3>
+                    <h2 class="title">
+                        <span></span>
+                    </h2>
+                    <h4 class="h4">
+                        <span></span>
+                    </h4>
+                        <p4 class="whs">
+                            <span></span>
+                        </p4>
+                        <p class="resultGradient">
+                            <span></span>
+                        </p>
+                        <p3 class="info">
+                            <span></span>
+                        </p3>
+                        <button id="close" class="BtnOk">
+                            OK
+                        </button>
+                    </h3>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./main.js" defer></script>
+</body>
+
+</html>
