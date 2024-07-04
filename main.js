@@ -20,6 +20,8 @@ const textHeight = document.getElementById('textHeight')
 const textWeight = document.getElementById('textWeight')
 const info = document.querySelector('.modal-wrapper .info')
 
+/*new test*/
+
 function AddComma(text) {
     switch (text.value.length) {
         case 1:
