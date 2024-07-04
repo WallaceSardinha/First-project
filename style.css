@@ -220,6 +220,7 @@ h2 {
     background-color: #12c568;
     border: none;
     cursor: pointer;
+    border-radius: 25px;
     
 
 }
@@ -364,6 +365,7 @@ input[type="radio"]:checked+label {
     border-radius: 25px;
     border-style: solid;
     border-color: rgb(150, 255, 174);
+    cursor: pointer;
 
 
 }

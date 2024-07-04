@@ -67,6 +67,13 @@ form.onsubmit = function (event) {
         document.getElementById("height").style.border = "2px solid black";
     }
 
+    if (!inputname.value) {
+        
+       document.getElementById("name").style.border = "2px solid red";
+    } else {
+        document.getElementById("name").style.border = "2px solid black";
+    }
+    
 
     if (inputError) {
         return;
