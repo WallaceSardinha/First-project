@@ -47,13 +47,12 @@ body {
 }
 .card {
 
-    margin-top: 180px;
+    justify-content: center;
     padding: 3.6rem 5.4rem 3.6rem 5.4rem;
     background-color: rgb(231, 255, 199);
     max-width: 42.8rem;
     max-height: auto;
     margin-inline: auto;
-    margin-bottom: 250px;
     box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
     border-radius: 1.6rem;
     border-color: #57623a;
