@@ -28,31 +28,33 @@
                     <label id="textName" for="name">Informe o seu nome:</label>
                     <input id="name" type="text" placeholder="Exemplo: João">
                 </div>
+
                 <div class="input-wrapper">
                     <label id="textWeight" for="weight" onkeyup="AddComma(this);">Informe o seu peso:</label>
                     <input id="weight" type="text" placeholder="Exemplo: 75kg">
                 </div>
-                
+
                 <div class="input-wrapper">
                     <label id="textHeight" for="height">Informe a sua altura:</label>
                     <input id="height" type="text" placeholder="Exemplo: 1,60cm">
                 </div>
-                <fieldset class="field">
-                <div class="male">
-                    <input class="M" type="radio" id="MALE" name="drone" value="male" /></input>
-                    <label for="MALE" >Homem</label>
-                </div>
 
-                <div class="female">
-                    <input class="f" type="radio" id="FEMALE" name="drone" value="female" /></input>
-                    <label for="FEMALE">Mulher</label>
-                </div>
-            </fieldset>
-            <div class="buttonok">
-                <button type="submit">
-                    <bold>CALCULAR</bold>
-                </button>
-    </form>
+                <fieldset class="field">
+                    <div class="male">
+                        <input class="M" type="radio" id="MALE" name="drone" value="male" /></input>
+                        <label for="MALE">Homem</label>
+                    </div>
+
+                    <div class="female">
+                        <input class="f" type="radio" id="FEMALE" name="drone" value="female" /></input>
+                        <label for="FEMALE">Mulher</label>
+                    </div>
+                </fieldset>
+                <div class="buttonok">
+                    <button type="submit">
+                        <bold>CALCULAR</bold>
+                    </button>
+            </form>
 
             <div class="modal-wrapper" id="mw">
                 <div class="modal card">
@@ -62,7 +64,7 @@
                     <h3 class="h3">
                         <span>
                         </span>
-                        </h3>
+                    </h3>
                     <h2 class="title">
                         <span></span>
                     </h2>
@@ -82,7 +84,7 @@
                     <button id="close" class="BtnOk">
                         OK
                     </button>
-                </h3>
+                    </h3>
                 </div>
             </div>
         </main>
