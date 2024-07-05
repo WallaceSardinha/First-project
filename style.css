@@ -15,7 +15,6 @@ body {
     background-size: cover;
     text-align: center;
     font-size: 1.6rem;
-    justify-content: center;
     align-items: center;
     
 
@@ -27,13 +26,20 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
 .container {
 
-    position: relative;
-    justify-content: center;
-    margin: 20.rem;
 
-    
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .title hide {
