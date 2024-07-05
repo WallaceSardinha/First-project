@@ -271,6 +271,35 @@ form.onsubmit = function (event) {
         }} break;
     }
 
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM carregou');
+        
+        var campo1 = document.getElementById('weight');
+        
+        if (!campo1) return;
+        
+        var campo1Timeout;
+        
+        campo1.addEventListener('input', function () {
+            if (campo1Timeout) clearTimeout(campo1Timeout);
+            
+            campo1Timeout = setTimeout(mascara, 200);
+        });
+        
+        function mascara()
+        {
+             var value = campo1.value.replace(/\D+/, ''); //Remove tudo que não for numero
+    
+             value = value.replace(/^(\d+)(\d{4})$/, '$1.$2');      
+             campo1.value = value;
+        }
+    });
+
+    
+
+
+
+
             const messageWelcome = `Bem vindo(a), 
             ${name}!`
             document.querySelector('.modal-wrapper .h3 span').innerText = messageInfo;
