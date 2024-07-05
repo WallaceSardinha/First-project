@@ -272,7 +272,8 @@ form.onsubmit = function (event) {
     }
 
 
-            const messageWelcome = `Bem vindo(a), ${name}!`
+            const messageWelcome = `Bem vindo(a), 
+            ${name}!`
             document.querySelector('.modal-wrapper .h3 span').innerText = messageInfo;
             const message = `seu IMC é de ${result}.`
             modalMessage.innerText = message

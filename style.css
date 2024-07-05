@@ -29,10 +29,9 @@ body {
 
 .container {
 
+    position: relative;
     justify-content: center;
-    height: 90vh;
-    display: grid;
-    margin: auto;
+    margin: 20.rem;
 
     
 }
@@ -45,6 +44,7 @@ body {
     border-color: #00a551;
 
 }
+
 .card {
 
     justify-content: center;
