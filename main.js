@@ -271,6 +271,9 @@ form.onsubmit = function (event) {
         }} break;
     }
 
+    if(inputname.value == "Crislaine") {
+        alert("Oi amor!")
+    }
 
             const messageWelcome = `Bem vindo(a), 
             ${name}!`
