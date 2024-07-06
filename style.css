@@ -25,12 +25,6 @@ body {
     display: none;
 }
 
-.container {
-
-    justify-content: center;
-    align-items: center;
-
-}
 
 .title hide {
 
@@ -63,7 +57,7 @@ body {
     box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
     border-radius: 1.6rem;
     border-color: #3b623a1c;
-    border-style: dashed;
+    border-style: double;
     top: 150px;
 
 }
@@ -342,16 +336,13 @@ h2 {
 
 } 
 
-
 .field {
 
-    place-content: center;
     margin: .5rem .5rem;
     display: flex;
     border: none;
+    justify-content: center;
     
-
-
 }
 
 input[type="radio"]:checked+label {
