@@ -50,7 +50,7 @@ body {
 
     
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 1.6rem 4.9rem 1.6rem 4.9rem;
     background-color: rgb(231, 255, 199);
     max-width: 40.8rem;
@@ -295,8 +295,7 @@ h2 {
     border-style: solid;
     border-color: rgb(0, 0, 0);
     background-color:black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    
 
 }
 
