@@ -107,23 +107,23 @@ form.onsubmit = function (event) {
     var message7 = 'Obesidade III.';
     var messageInfo = `Com ${weight}kg e ${height}cm de altura,`;
 
-    let A = (result < 15.00);
-    let B = (result < 16.00);
+    let A = (result < 16.00);
+    let B = (result < 17.00);
     let C = (result < 19.00);
-    let D = (result < 25.00);
-    let E = (result < 30.00);
-    let F = (result < 35.00);
-    let G = (result < 39.00);
-    let H = (result > 40.00);
+    let D = (result < 23.99);
+    let E = (result < 28.99);
+    let F = (result < 34.99);
+    let G = (result < 35.00);
+    let H = (result > 38.99);
 
     let A1 = (result <= 16.00);
     let B1 = (result <= 18.00);
-    let C1 = (result <= 19.00);
-    let D1 = (result <= 24.00);
+    let C1 = (result <= 20.00);
+    let D1 = (result <= 24.99);
     let E1 = (result <= 29.00);
     let F1 = (result <= 34.00);
     let G1 = (result <= 39.00);
-    let H1 = (result >= 40.00);
+    let H1 = (result >= 39.99);
 
     switch (buttonF.checked) {
 
@@ -307,12 +307,14 @@ form.onsubmit = function (event) {
             modalMessage.innerText = message
             modalName.innerText = messageWelcome
             modalWrapper.classList.add('open')
+            
 
             const BtnClose = document.getElementById('close')
             BtnClose.onclick = function (event) {
                 event.target == modalWrapper
                 modalWrapper.style.visibility = "hidden"
                 location.reload()
+                return;
 
             }
     }
