@@ -17,8 +17,6 @@ body {
     text-align: center;
     font-size: 1.6rem;
     align-items: center;
-    
-
 
 }
 
@@ -29,10 +27,8 @@ body {
 
 .container {
 
-
     justify-content: center;
     align-items: center;
-
 
 }
 
@@ -58,15 +54,16 @@ body {
 
 .card {
 
+    
     margin: auto;
     padding: 1.6rem 4.9rem 1.6rem 4.9rem;
     background-color: rgb(231, 255, 199);
     max-width: 40.8rem;
     box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
     border-radius: 1.6rem;
-    border-color: #57623a;
-    /*border-style: dashed;*/
-    margin-top: 150px;
+    border-color: #3b623a1c;
+    border-style: dashed;
+    top: 150px;
 
 }
 
@@ -379,7 +376,6 @@ input[type="radio"]:checked+label {
     border-style: solid;
     border-color: rgb(163 194 153 / 40%);
     cursor: pointer;
-    margi
 
 
 }
