@@ -66,7 +66,7 @@ form.onsubmit = function (event) {
     } else {
         document.getElementById("height").style.border = "2px solid black";
     }
-
+/*
     if (!inputname.value) {
         
        document.getElementById("name").style.border = "2px solid red";
@@ -74,7 +74,7 @@ form.onsubmit = function (event) {
         document.getElementById("name").style.border = "2px solid black";
     }
     
-
+*/
     if (inputError) {
         return;
     }
@@ -304,6 +304,8 @@ form.onsubmit = function (event) {
             ${name}!`
             const messageWelcomeF = `Bem vinda, 
             ${name}!`
+            const messageWelcomeEM = `Bem vindo!`
+            const messageWelcomeEF = `Bem vinda!`
             document.querySelector('.modal-wrapper .h3 span').innerText = messageInfo;
             const message = `seu IMC é de ${result}.`
             modalMessage.innerText = message
@@ -311,6 +313,10 @@ form.onsubmit = function (event) {
                 modalName.innerText = messageWelcomeM
             } else {
                 modalName.innerText = messageWelcomeF
+            } if (!name && buttonM.checked) {
+                modalName.innerText = messageWelcomeEM
+            } else if (!name && buttonF.checked) {
+                modalName.innerText = messageWelcomeEF
             }
             modalWrapper.classList.add('open')
             
