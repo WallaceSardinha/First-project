@@ -74,7 +74,7 @@ and (orientation: portrait){
 
     
         margin: auto;
-        margin-top: 35px;
+        margin-top: 170px;
         padding: 1.6rem 4.9rem 1.6rem 4.9rem;
         background-color: rgb(231, 255, 199);
         max-width: 40.8rem;
@@ -83,6 +83,7 @@ and (orientation: portrait){
         border-color: #3b623a1c;
         border-style: solid;
         top: 150px;
+        inset: 0;
     
     }
 
@@ -127,6 +128,7 @@ display: none;
 }
 
 body, html {
+
     height: 100%;
 }
   
