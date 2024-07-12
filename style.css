@@ -2,6 +2,7 @@
     margin-top: 0;
     padding: 0;
     box-sizing: border-box;
+    place-content: center;
 }
 :root {
     font-size: 62.5%;
@@ -440,7 +441,6 @@ input[type="radio"]:checked+label {
 .footer {
 
     display: flex;
-
 
 }
 
