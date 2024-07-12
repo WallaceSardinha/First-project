@@ -10,7 +10,7 @@
 
 body {
     
-    background-image: url(./images/5914345.jpg);
+    background-image: url(./images/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -46,22 +46,44 @@ body {
 }
 */
 
-.card {
+@media only screen
+and (min-width: 720px)
+and (max-width: 1336px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait){
+    .card {
+    
+        
+        margin: auto;
+        margin-top: 50px;
+        padding: 1.6rem 4.9rem 1.6rem 4.9rem;
+        background-color: rgb(231, 255, 199);
+        max-width: 40.8rem;
+        box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+        border-radius: 1.6rem;
+        border-color: #3b623a1c;
+        border-style: double;
+        top: 150px;
+    
+    }
+
+    }
+
+    .card {
 
     
-    margin: auto;
-    margin-top: 50px;
-    padding: 1.6rem 4.9rem 1.6rem 4.9rem;
-    background-color: rgb(231, 255, 199);
-    max-width: 40.8rem;
-    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
-    border-radius: 1.6rem;
-    border-color: #3b623a1c;
-    border-style: double;
-    top: 150px;
-
-}
-
+        margin: auto;
+        margin-top: 150px;
+        padding: 1.6rem 4.9rem 1.6rem 4.9rem;
+        background-color: rgb(231, 255, 199);
+        max-width: 40.8rem;
+        box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+        border-radius: 1.6rem;
+        border-color: #3b623a1c;
+        border-style: solid;
+        top: 150px;
+    
+    }
 
 .input-wrapper {
     padding: .8rem .8rem .8rem;
@@ -98,7 +120,7 @@ display: none;
     border-radius: .5rem;
     width: 15.5rem;
     height: 3rem;
-    border-style: double;
+    border-style: solid;
     border-color: rgba(87, 143, 70, 0.548);
 
 }
@@ -412,5 +434,29 @@ input[type="radio"]:checked+label {
     transform: scale(1.1);
     transition: transform .4s ;
     background-color: rgb(150, 255, 174);
+
+}
+
+.footer {
+
+    position: fixed;
+    right: 890px;
+    top: 770px
+
+}
+
+.github {
+
+    margin: 5px;
+    max-width: 25px;
+    display: initial;
+
+}
+
+.linkedin {
+
+    margin: 5px;
+    max-width: 25px;
+    display: initial;
 
 }
