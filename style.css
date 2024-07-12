@@ -44,6 +44,7 @@ body {
 }
 */
 
+/*
 @media only screen
 and (min-width: 720px)
 and (max-width: 1336px)
@@ -66,12 +67,14 @@ and (orientation: portrait){
     }
 
     }
+*/
+
 
     .card {
 
     
         margin: auto;
-        margin-top: 50px;
+        margin-top: 35px;
         padding: 1.6rem 4.9rem 1.6rem 4.9rem;
         background-color: rgb(231, 255, 199);
         max-width: 40.8rem;
