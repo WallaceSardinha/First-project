@@ -300,12 +300,18 @@ form.onsubmit = function (event) {
 
 
 
-            const messageWelcome = `Bem vindo(a), 
+            const messageWelcomeM = `Bem vindo, 
+            ${name}!`
+            const messageWelcomeF = `Bem vinda, 
             ${name}!`
             document.querySelector('.modal-wrapper .h3 span').innerText = messageInfo;
             const message = `seu IMC é de ${result}.`
             modalMessage.innerText = message
-            modalName.innerText = messageWelcome
+            if (buttonM.checked) {
+                modalName.innerText = messageWelcomeM
+            } else {
+                modalName.innerText = messageWelcomeF
+            }
             modalWrapper.classList.add('open')
             
 
