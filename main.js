@@ -19,6 +19,7 @@ const RG = document.querySelector('.modal-wrapper .resultGradient span')
 const textHeight = document.getElementById('textHeight')
 const textWeight = document.getElementById('textWeight')
 const info = document.querySelector('.modal-wrapper .info')
+const alertMessage = document.querySelector('.ALERT')
 
 /*new test*/
 
@@ -271,44 +272,18 @@ form.onsubmit = function (event) {
         }} break;
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log('DOM carregou');
-        
-        var campo1 = document.getElementById('weight');
-        
-        if (!campo1) return;
-        
-        var campo1Timeout;
-        
-        campo1.addEventListener('input', function () {
-            if (campo1Timeout) clearTimeout(campo1Timeout);
-            
-            campo1Timeout = setTimeout(mascara, 200);
-        });
-        
-        function mascara()
-        {
-             var value = campo1.value.replace(/\D+/, ''); //Remove tudo que não for numero
     
-             value = value.replace(/^(\d+)(\d{4})$/, '$1.$2');      
-             campo1.value = value;
-        }
-    });
-
     
-
-
-
-
-            const messageWelcomeM = `Bem vindo, 
-            ${name}!`
-            const messageWelcomeF = `Bem vinda, 
-            ${name}!`
+    const messageWelcomeM = `Bem vindo, 
+    ${name}!`
+    const messageWelcomeF = `Bem vinda, 
+    ${name}!`
             const messageWelcomeEM = `Bem vindo!`
             const messageWelcomeEF = `Bem vinda!`
             document.querySelector('.modal-wrapper .h3 span').innerText = messageInfo;
             const message = `seu IMC é de ${result}.`
             modalMessage.innerText = message
+            
             if (buttonM.checked) {
                 modalName.innerText = messageWelcomeM
             } else {
@@ -318,9 +293,21 @@ form.onsubmit = function (event) {
             } else if (!name && buttonF.checked) {
                 modalName.innerText = messageWelcomeEF
             }
+
+            ////////////////////////////////////////////////////////////////
+            if(inputname === "Bolinha de Ouro" || "bolinha de ouro" || "Wan" || "wan" || "Wania Mara" || "Wania Mara Albino" || "wania mara" || "wania mara albino" || "Ludovick" || "ludovick" || " Wan Ludovick" || "wan lucida" || "wan ludovick") {
+                modalName.innerText = "Amor da minha vida!"
+                modalMessage.innerText = "Você esta perfeita, como sempre vai estar."
+                info.innerText = "Perfeição e quando você e o grande amor da vida de alguem, nesse caso, nada mais importa, apenas você."
+                RG.innerText = "Perfeição!"
+                RG.style.color = "green"
+                alertMessage.innerText = "Valido somente para meu grande amor."
+            }
+            //----------------------------------------------------------------
+            
             modalWrapper.classList.add('open')
             
-
+            
             const BtnClose = document.getElementById('close')
             BtnClose.onclick = function (event) {
                 event.target == modalWrapper
