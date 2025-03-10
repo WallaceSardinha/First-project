@@ -294,17 +294,28 @@ form.onsubmit = function (event) {
                 modalName.innerText = messageWelcomeEF
             }
 
-            ////////////////////////////////////////////////////////////////
-            if(inputname === "Bolinha de Ouro" || "bolinha de ouro" || "Wan" || "wan" || "Wania Mara" || "Wania Mara Albino" || "wania mara" || "wania mara albino" || "Ludovick" || "ludovick" || " Wan Ludovick" || "wan lucida" || "wan ludovick") {
-                modalName.innerText = "Amor da minha vida!"
+
+const lowerName = inputname.value.toLowerCase();
+const specialNames = [
+  "bolinha de ouro",
+  "wan",
+  "wania mara",
+  "wania mara albino",
+  "ludovick",
+  "wan ludovick",
+  "wan lucida",
+  "wan ludovick"
+];
+
+if (specialNames.includes(lowerName)) {
+  modalName.innerText = "Amor da minha vida!"
                 modalMessage.innerText = "Você esta perfeita, como sempre vai estar."
                 info.innerText = "Perfeição e quando você e o grande amor da vida de alguem, nesse caso, nada mais importa, apenas você."
                 RG.innerText = "Perfeição!"
                 RG.style.color = "green"
                 alertMessage.innerText = "Valido somente para meu grande amor."
             }
-            //----------------------------------------------------------------
-            
+
             modalWrapper.classList.add('open')
             
             
